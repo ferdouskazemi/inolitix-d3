@@ -6,16 +6,12 @@ interface ReusableCardProps {
   imageUrl: string;
   linkUrl: string;
 }
-const ReusableCard = ({
-  title,
-  imageUrl,
-  linkUrl,
-}: ReusableCardProps) => {
+const ReusableCard = ({ title, imageUrl, linkUrl }: ReusableCardProps) => {
   return (
     <Card
       hoverable
-     className='w-full h-[300px]'
-      cover={<img alt={title} src={imageUrl} className='h-[200px]' />}
+      className="w-full h-[300px]"
+      cover={<img alt={title} src={imageUrl} className="h-[200px] object-cover" />}
     >
       <Card.Meta
         title={title}
