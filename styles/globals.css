@@ -1,26 +1,62 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-* {
+*,
+*::after,
+*::before {
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/*        
+---------------    Ant Design Custome Design   --------------   
+--- layout Design ---           
+*/
+.ant-menu li:hover {
+  background-color: #5459ea !important;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: #5459ea !important;
+}
+
+.ant-table-thead .ant-table-cell {
+  background-color: #eff0f4 !important;
+  color: rgba(24, 24, 24, 0.918) !important;
+  font-size: 16px;
+}
+
+.ant-pagination-item {
+  border: 1px solid #eff0f4 !important;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+  color: #505470;
+}
+
+.ant-pagination-item.ant-pagination-item-active {
+  background-color: #5459ea !important;
+  border: none !important;
+}
+.ant-pagination-item.ant-pagination-item-active p,
+.ant-pagination-item.ant-pagination-item-active li,
+.ant-pagination-item.ant-pagination-item-active a {
+  color: #eff0f4 !important;
+}
+
+.ant-table-row:nth-child(odd) .ant-table-cell {
+  background: #fcfcfc !important;
+}
+
+.ant-spin-dot-item {
+  background-color: #5459ea !important;
 }
