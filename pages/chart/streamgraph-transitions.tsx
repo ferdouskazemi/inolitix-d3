@@ -1,5 +1,5 @@
-import PublicLayout from "../layout/public-layout";
-import StreamgraphTransitionsChart  from "../components/streamgraph-transitions";
+import PublicLayout from "../../layout/public-layout";
+import StreamgraphTransitionsChart  from "../../components/streamgraph-transitions";
 const StreamgraphTransitions = () => {
     return ( 
         <PublicLayout title="Zoomable Suburst Chart">

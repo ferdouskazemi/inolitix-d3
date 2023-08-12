@@ -1,5 +1,5 @@
-import BarChartRaceChart from "../components/bar-chart-race";
-import PublicLayout from "../layout/public-layout";
+import BarChartRaceChart from "../../components/bar-chart-race";
+import PublicLayout from "../../layout/public-layout";
 const BarChartRace = () => {
 
 

@@ -1,6 +1,6 @@
-import ZoomableSunburstChart from "../components/zoomable-sunburst";
-import PublicLayout from "../layout/public-layout";
-import data from './../components/zoomable-sunburst/data.json'
+import ZoomableSunburstChart from "../../components/zoomable-sunburst";
+import PublicLayout from "../../layout/public-layout";
+import data from '../../components/zoomable-sunburst/data.json'
 const ZoomableSunburst = () => {
     return ( 
         <PublicLayout title="Zoomable Suburst Chart">

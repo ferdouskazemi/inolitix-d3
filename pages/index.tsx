@@ -13,27 +13,27 @@ interface Card {
 const cards: Card[] = [
   {
     title: 'Zoomable Sunburst',
-    imageUrl: 'https://picsum.photos/200/300?grayscale',
+    imageUrl: '/charts/Zoomable-sunburst-D3-Observable.png',
     linkUrl: '/zoomable-sunburst',
   },
   {
     title: 'Coolapsible Tree',
-    imageUrl: 'https://picsum.photos/200/300?grayscale',
+    imageUrl: '/charts/Collapsible-tree-D3-Observable.png',
     linkUrl: '/zoomable-circle-packing',
   },
   {
     title: 'Streamgraph Transitions',
-    imageUrl: 'https://picsum.photos/200/300?grayscale',
+    imageUrl: '/charts/Streamgraph-transitions-D3-Observable.png',
     linkUrl: '/zoomable-icicle',
   },
   {
-    title: 'Arc Diagram',
-    imageUrl: 'https://picsum.photos/200/300?grayscale',
+    title: 'Zoomable Circle Packing',
+    imageUrl: '/charts/Zoomable-circle-packing-D3-Observable.png',
     linkUrl: '/zoomable-treemap',
   },
   {
-    title: 'Zoomable Partition',
-    imageUrl: 'https://picsum.photos/200/300?grayscale',
+    title: 'Zoomable Bar Chart',
+    imageUrl: '/charts/Zoomable-bar-chart-D3-Observable.png',
     linkUrl: '/zoomable-partition',
   },
 ];

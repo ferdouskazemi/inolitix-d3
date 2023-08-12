@@ -1,6 +1,6 @@
-import PublicLayout from '../layout/public-layout';
-import data from '../components/arc-diagram/data.json';
-import ArcDiagramChart from '../components/arc-diagram';
+import PublicLayout from '../../layout/public-layout';
+import data from '../../components/arc-diagram/data.json';
+import ArcDiagramChart from '../../components/arc-diagram';
 import { useEffect, useState } from 'react';
 const ArcDiagram = () => {
   const url = 'http://localhost:3000/components/arc-diagram/data.json';

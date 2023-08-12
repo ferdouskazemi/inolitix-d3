@@ -1,6 +1,6 @@
-import CollapsibleTreeChart from "../components/colaapsible-tree";
-import PublicLayout from "../layout/public-layout";
-import data from '../components/colaapsible-tree/data.json'
+import CollapsibleTreeChart from "../../components/colaapsible-tree";
+import PublicLayout from "../../layout/public-layout";
+import data from '../../components/colaapsible-tree/data.json'
 const CollapsibileTree = () => {
     return ( 
         <PublicLayout title="Zoomable Suburst Chart">

@@ -1,7 +1,7 @@
 import React, { ReactNode, useEffect, useState } from 'react';
 import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
 import { Layout, Menu, Spin, theme } from 'antd';
-
+import  Image  from 'next/image';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 
@@ -33,7 +33,7 @@ function PublicLayout({ title, children }: PrivateLayoutProps) {
       >
         <div className="sticky top-3">
           <div className="flex my-3 justify-center">
-           <p className='text-white text-3xl text-center'>D3 Project</p>
+           <Image src="/inod3-logo.png" width={100} height={40} alt='logo' />
           </div>
           <div className="">
             <MenuNavigation currentRoute={router.pathname} />
