@@ -5,6 +5,7 @@ import {
   COOLAPSIBLE_TREE,
   DASHBOARD,
   STREAMGRAPH_TRANSITIONS,
+  ZOOMABLE_CIRCLE_PACKING,
   ZOOMABLE_SUNBURST,
 } from '../constants/pages';
 
@@ -36,6 +37,12 @@ const menuItems = [
     icon: <FcComboChart />,
     route: ARC_DIAGRAM,
   },
+  {
+    key: '6',
+    label: 'Zoomable circle packing',
+    icon: <FcComboChart />,
+    route: ZOOMABLE_CIRCLE_PACKING,
+  }
 ];
 
 const MenuNavigation = ({ currentRoute }: { currentRoute: string }) => {
