@@ -11,6 +11,7 @@ export default function BarChartRaceChart({ data }) {
       if (name === "chart") {
         return new Inspector(ref.current);
       }
+      
     });
     main.redefine("data", data);
     return () => runtime.dispose();
