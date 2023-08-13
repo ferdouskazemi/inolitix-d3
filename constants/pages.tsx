@@ -6,3 +6,7 @@ export const STREAMGRAPH_TRANSITIONS = '/chart/streamgraph-transitions';
 export const ARC_DIAGRAM = '/chart/arc-diagram';
 export const TREEMAP = '/chart/treemap';
 export const ZOOMABLE_BAR = '/chart/zoomable-bar-chart';
+export const HISTOGRAM = "/chart/histogram";
+export const PANNABLE = "/chart/pannable";
+export const BRUSHABLE_SCATTERPLOT_MATRIX = "/chart/brushable-scatterplot-matrix";
+export const LINE_CART_WITH_TOOLTIP = "/chart/line-chart-with-tooltip";

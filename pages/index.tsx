@@ -1,8 +1,8 @@
-import Head from 'next/head';
-import PublicLayout from '../layout/public-layout';
-import { Col, Input, Row } from 'antd';
-import ReusableCard from '../components/custome-components/card-details';
-import { useState } from 'react';
+import Head from "next/head";
+import PublicLayout from "../layout/public-layout";
+import { Col, Input, Row } from "antd";
+import ReusableCard from "../components/custome-components/card-details";
+import { useState } from "react";
 
 interface Card {
   title: string;
@@ -12,34 +12,55 @@ interface Card {
 
 const cards: Card[] = [
   {
-    title: 'Zoomable Sunburst',
-    imageUrl: '/charts/Zoomable-sunburst-D3-Observable.png',
-    linkUrl: '/zoomable-sunburst',
+    title: "Histogram Chart",
+    imageUrl: "/charts/Histogram-D3-Observable.png",
+    linkUrl: "/zoomable-partition",
+  },
+
+  {
+    title: "Coolapsible Tree",
+    imageUrl: "/charts/Collapsible-tree-D3-Observable.png",
+    linkUrl: "/zoomable-circle-packing",
   },
   {
-    title: 'Coolapsible Tree',
-    imageUrl: '/charts/Collapsible-tree-D3-Observable.png',
-    linkUrl: '/zoomable-circle-packing',
+    title: "Streamgraph Transitions",
+    imageUrl: "/charts/Streamgraph-transitions-D3-Observable.png",
+    linkUrl: "/zoomable-icicle",
   },
   {
-    title: 'Streamgraph Transitions',
-    imageUrl: '/charts/Streamgraph-transitions-D3-Observable.png',
-    linkUrl: '/zoomable-icicle',
+    title: "Zoomable Circle Packing",
+    imageUrl: "/charts/Zoomable-circle-packing-D3-Observable.png",
+    linkUrl: "/zoomable-treemap",
   },
   {
-    title: 'Zoomable Circle Packing',
-    imageUrl: '/charts/Zoomable-circle-packing-D3-Observable.png',
-    linkUrl: '/zoomable-treemap',
+    title: "Zoomable Bar Chart",
+    imageUrl: "/charts/Zoomable-bar-chart-D3-Observable.png",
+    linkUrl: "/zoomable-partition",
   },
   {
-    title: 'Zoomable Bar Chart',
-    imageUrl: '/charts/Zoomable-bar-chart-D3-Observable.png',
-    linkUrl: '/zoomable-partition',
+    title: "Brushable scatterplot matrix Chart",
+    imageUrl: "/charts/Brushable-scatterplot-matrix-D3-Observable.png",
+    linkUrl: "/zoomable-partition",
+  },
+  {
+    title: "Line chart with tooltip Chart",
+    imageUrl: "/charts/Line-chart-with-tooltip-D3-Observable.png",
+    linkUrl: "/zoomable-partition",
+  },
+  {
+    title: "Treemap Chart",
+    imageUrl: "/charts/Treemap-D3-Observable.png",
+    linkUrl: "/zoomable-partition",
+  },
+  {
+    title: "Zoomable Sunburst",
+    imageUrl: "/charts/Zoomable-sunburst-D3-Observable.png",
+    linkUrl: "/zoomable-sunburst",
   },
 ];
 
 export default function Home() {
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
   const [filteredCards, setFilteredCards] = useState<Card[]>(cards);
 
   const handleSearch = (query: string) => {
@@ -57,19 +78,21 @@ export default function Home() {
         <meta name="description" content="Welcome to D3 Project" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-        <p className="text-center text-2xl font-semibold">
-          Powerful, Beautiful, Easy Data Visiulation.{' '}
-        </p>
-      </div>
-      <div className="container mx-auto my-8 flex justify-center">
-        <Input
-          placeholder="Search..."
-          value={searchQuery}
-          className="border rounded-md py-2 px-4 shadow-sm focus:ring-violet-800 focus:border-violet-800 max-w-[500px]"
-          onChange={(e) => handleSearch(e.target.value)}
-        />
-      </div>
+      <section>
+        <div>
+          <p className="text-center text-base font-semibold font-[inter]">
+            Powerful, Beautiful, Easy Data Visiulation.{" "}
+          </p>
+        </div>
+        <div className="container mx-auto my-8 flex justify-center">
+          <Input
+            placeholder="Search..."
+            value={searchQuery}
+            className="border rounded-md py-2 px-4 shadow-sm focus:ring-violet-800 focus:border-violet-800 max-w-[500px]"
+            onChange={(e) => handleSearch(e.target.value)}
+          />
+        </div>
+      </section>
       <Row gutter={[16, 16]}>
         {filteredCards.length > 0 ? (
           filteredCards.map((card, index) => (
