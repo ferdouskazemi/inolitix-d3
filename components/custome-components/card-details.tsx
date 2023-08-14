@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Badge } from 'antd';
+import Link from 'next/link';
 
 interface ReusableCardProps {
   title: string;
@@ -18,9 +19,7 @@ const ReusableCard = ({ title, imageUrl, linkUrl }: ReusableCardProps) => {
         className='font-[inter]'
         description={
           <>
-            <a href={linkUrl} target="_blank" rel="noopener noreferrer">
-              Go to page
-            </a>
+           <Link href={linkUrl}>Go the page </Link>
           </>
         }
       />

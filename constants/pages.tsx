@@ -10,3 +10,5 @@ export const HISTOGRAM = "/chart/histogram";
 export const PANNABLE = "/chart/pannable";
 export const BRUSHABLE_SCATTERPLOT_MATRIX = "/chart/brushable-scatterplot-matrix";
 export const LINE_CART_WITH_TOOLTIP = "/chart/line-chart-with-tooltip";
+export const BRUSHABLE_SCATTERPLOT = "/chart/brushable-scatterplot";   
+export const HIERARCHICAL_BAR_CHART = "/chart/hierarchical-bar-chart"; 

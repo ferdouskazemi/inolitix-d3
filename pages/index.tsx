@@ -3,6 +3,7 @@ import PublicLayout from "../layout/public-layout";
 import { Col, Input, Row } from "antd";
 import ReusableCard from "../components/custome-components/card-details";
 import { useState } from "react";
+import { BRUSHABLE_SCATTERPLOT, BRUSHABLE_SCATTERPLOT_MATRIX, HIERARCHICAL_BAR_CHART, HISTOGRAM, LINE_CART_WITH_TOOLTIP, STREAMGRAPH_TRANSITIONS, TREEMAP, ZOOMABLE_BAR, ZOOMABLE_CIRCLE_PACKING, ZOOMABLE_SUNBURST } from "../constants/pages";
 
 interface Card {
   title: string;
@@ -14,48 +15,58 @@ const cards: Card[] = [
   {
     title: "Histogram Chart",
     imageUrl: "/charts/Histogram-D3-Observable.png",
-    linkUrl: "/zoomable-partition",
+    linkUrl: HISTOGRAM,
   },
 
   {
     title: "Coolapsible Tree",
     imageUrl: "/charts/Collapsible-tree-D3-Observable.png",
-    linkUrl: "/zoomable-circle-packing",
+    linkUrl: ZOOMABLE_CIRCLE_PACKING,
   },
   {
     title: "Streamgraph Transitions",
     imageUrl: "/charts/Streamgraph-transitions-D3-Observable.png",
-    linkUrl: "/zoomable-icicle",
+    linkUrl: STREAMGRAPH_TRANSITIONS,
   },
   {
     title: "Zoomable Circle Packing",
     imageUrl: "/charts/Zoomable-circle-packing-D3-Observable.png",
-    linkUrl: "/zoomable-treemap",
+    linkUrl: ZOOMABLE_CIRCLE_PACKING,
   },
   {
     title: "Zoomable Bar Chart",
     imageUrl: "/charts/Zoomable-bar-chart-D3-Observable.png",
-    linkUrl: "/zoomable-partition",
+    linkUrl: ZOOMABLE_BAR,
   },
   {
     title: "Brushable scatterplot matrix Chart",
     imageUrl: "/charts/Brushable-scatterplot-matrix-D3-Observable.png",
-    linkUrl: "/zoomable-partition",
+    linkUrl: BRUSHABLE_SCATTERPLOT_MATRIX,
   },
   {
     title: "Line chart with tooltip Chart",
     imageUrl: "/charts/Line-chart-with-tooltip-D3-Observable.png",
-    linkUrl: "/zoomable-partition",
+    linkUrl: LINE_CART_WITH_TOOLTIP,
   },
   {
     title: "Treemap Chart",
     imageUrl: "/charts/Treemap-D3-Observable.png",
-    linkUrl: "/zoomable-partition",
+    linkUrl: TREEMAP,
   },
   {
     title: "Zoomable Sunburst",
     imageUrl: "/charts/Zoomable-sunburst-D3-Observable.png",
-    linkUrl: "/zoomable-sunburst",
+    linkUrl: ZOOMABLE_SUNBURST,
+  },
+  {
+    title: "Brushable scatterplot",
+    imageUrl: "/charts/Brushable-scatterplot-D3-Observable.png",
+    linkUrl: BRUSHABLE_SCATTERPLOT,
+  },
+  {
+    title: "Hierarchical bar chart",
+    imageUrl: "/charts/Hierarchical-bar-chart-D3-Observable.png",
+    linkUrl: HIERARCHICAL_BAR_CHART,
   },
 ];
 
