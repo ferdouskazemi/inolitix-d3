@@ -6,6 +6,7 @@ import {
   BRUSHABLE_SCATTERPLOT_MATRIX,
   COOLAPSIBLE_TREE,
   DASHBOARD,
+  HIERARCHICAL_BAR_CHART,
   HISTOGRAM,
   LINE_CART_WITH_TOOLTIP,
   PANNABLE,
@@ -92,6 +93,12 @@ const menuItems = [
     label: 'Brushable scatterplot chart',
     icon: <FcComboChart />,
     route: BRUSHABLE_SCATTERPLOT,
+  },
+  {
+    key: '14',
+    label: 'Hierarchical bar chart',
+    icon: <FcComboChart />,
+    route: HIERARCHICAL_BAR_CHART,
   },
 ];
 
