@@ -1,7 +1,7 @@
-import React, { ReactNode, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
-import { Layout, Menu, Spin, theme } from 'antd';
-import  Image  from 'next/image';
+import { Layout, theme } from 'antd';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 
@@ -15,7 +15,7 @@ interface PrivateLayoutProps {
   title?: string;
 }
 
-function PublicLayout({ title, children }: PrivateLayoutProps) {
+function PublicLayout({ children }: PrivateLayoutProps) {
   const [collapsed, setCollapsed] = useState(false);
 
   const {
@@ -33,7 +33,7 @@ function PublicLayout({ title, children }: PrivateLayoutProps) {
       >
         <div className="sticky top-3">
           <div className="flex my-3 justify-center">
-           <Image src="/inod3-logo.png" width={100} height={40} alt='logo' />
+            <Image src="/inod3-logo.png" width={100} height={40} alt="logo" />
           </div>
           <div className="">
             <MenuNavigation currentRoute={router.pathname} />
@@ -58,9 +58,7 @@ function PublicLayout({ title, children }: PrivateLayoutProps) {
               Welcome, <b className="font-semibold italic">Mahdi Ghandhari</b>{' '}
             </p>
           </div>
-          <div>
-            {/* <Profile /> */}
-          </div>
+          <div></div>
         </Header>
         <Content
           style={{
@@ -71,18 +69,14 @@ function PublicLayout({ title, children }: PrivateLayoutProps) {
             background: colorBgContainer,
           }}
         >
-          {!loading ? (
-            <CenteredLoader />
-          ) : (
-            <motion.div
-              key={router.route}
-              initial={{ opacity: 0, x: -60 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, y: 60 }}
-            >
-              {children}
-            </motion.div>
-          )}
+          <motion.div
+            key={router.route}
+            initial={{ opacity: 0, x: -60 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, y: 60 }}
+          >
+            {children}
+          </motion.div>
         </Content>
       </Layout>
     </Layout>
