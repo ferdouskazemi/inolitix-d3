@@ -3,7 +3,7 @@ import PublicLayout from "../layout/public-layout";
 import { Col, Input, Row } from "antd";
 import ReusableCard from "../components/custome-components/card-details";
 import { useState } from "react";
-import { BRUSHABLE_SCATTERPLOT_MATRIX, HISTOGRAM, LINE_CART_WITH_TOOLTIP, STREAMGRAPH_TRANSITIONS, TREEMAP, ZOOMABLE_BAR, ZOOMABLE_CIRCLE_PACKING, ZOOMABLE_SUNBURST } from "../constants/pages";
+import { BRUSHABLE_SCATTERPLOT, BRUSHABLE_SCATTERPLOT_MATRIX, HISTOGRAM, LINE_CART_WITH_TOOLTIP, STREAMGRAPH_TRANSITIONS, TREEMAP, ZOOMABLE_BAR, ZOOMABLE_CIRCLE_PACKING, ZOOMABLE_SUNBURST } from "../constants/pages";
 
 interface Card {
   title: string;
@@ -57,6 +57,11 @@ const cards: Card[] = [
     title: "Zoomable Sunburst",
     imageUrl: "/charts/Zoomable-sunburst-D3-Observable.png",
     linkUrl: ZOOMABLE_SUNBURST,
+  },
+  {
+    title: "Brushable scatterplot",
+    imageUrl: "/charts/Brushable-scatterplot-D3-Observable.png",
+    linkUrl: BRUSHABLE_SCATTERPLOT,
   },
 ];
 
