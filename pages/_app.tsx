@@ -38,7 +38,7 @@ function App({ Component, pageProps }: AppProps) {
         />
         <meta property="twitter:image" content="/ino-d3.jpg" />
 
-        {/* <!-- Meta Tags Generated with https://metatags.io --> */}
+        {/* <!-- Meta Tags Generated with  --> */}
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
