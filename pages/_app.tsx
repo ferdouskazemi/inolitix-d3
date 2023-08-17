@@ -17,7 +17,7 @@ function App({ Component, pageProps }: AppProps) {
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:url" content="https://inolitix-d3.vercel.app/" />
         <meta property="og:title" content="D3 Project" />
         <meta
           property="og:description"
@@ -36,10 +36,7 @@ function App({ Component, pageProps }: AppProps) {
           property="twitter:description"
           content="Powerful, Beautiful, Easy Data Visiulation."
         />
-        <meta
-          property="twitter:image"
-          content="/ino-d3.jpg"
-        />
+        <meta property="twitter:image" content="/ino-d3.jpg" />
 
         {/* <!-- Meta Tags Generated with https://metatags.io --> */}
         <meta
