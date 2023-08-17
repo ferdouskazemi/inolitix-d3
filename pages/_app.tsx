@@ -38,7 +38,7 @@ function App({ Component, pageProps }: AppProps) {
         />
         <meta property="twitter:image" content="/ino-d3.jpg" />
 
-        {/* <!-- Meta Tags Generated with  --> */}
+        {/* <!-- Meta Tags Generated with https://inolitix-d3.vercel.app/ --> */}
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
