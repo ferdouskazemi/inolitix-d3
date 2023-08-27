@@ -52,7 +52,7 @@ const convertToJSON = (data: ExcelRow[]): TreeNode => {
       yearNode.children.push(txnTypeNode);
     }
 
-    const tagNode = { name: row.Tag, value: row.Amount };
+    const tagNode = { name: row.Tag, value: row.Amount, children: [] };
     txnTypeNode.children.push(tagNode);
   });
 
@@ -68,11 +68,15 @@ const TreeMap = () => {
   const handleFileChange = async (
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
-    const file = event.target.files[0];
+    const file = event.target.files?.[0]; // Use optional chaining to handle null value
+    if (!file) {
+      // No file selected, handle this case if needed
+      return;
+    }
     const reader = new FileReader();
 
     reader.onload = function (e) {
-      const data = new Uint8Array(e.target.result as ArrayBuffer);
+      const data = new Uint8Array(e.target?.result as ArrayBuffer);
       const workbook = XLSX.read(data, { type: "array" });
       const sheetName = workbook.SheetNames[0];
       const sheet = workbook.Sheets[sheetName];
