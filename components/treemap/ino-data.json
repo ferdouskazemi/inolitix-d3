@@ -1,0 +1,51 @@
+{
+  "name": "Business",
+  "children": [
+    {
+      "name": "EWB - T&B C GR - CHK - #7433",
+      "children": [
+        {
+          "name": "Additions",
+          "children": [
+            { "name": "ADP FEE", "value": 500 },
+            { "name": "Deposit Bridge", "value": 1432026.1 },
+            { "name": "LOAN #2077", "value": 504000 },
+            { "name": "LOAN #2687", "value": 5000000 },
+            { "name": "LOAN #2765", "value": 200000 },
+            { "name": "LOAN Reversed", "value": 10000 },
+            { "name": "MERCHANT SERVICE", "value": 789140.37 },
+            { "name": "Others", "value": 56401.42 },
+            { "name": "PAYCHEX TPS TAXES", "value": 372.78},
+            { "name": "TAX AND BUSINES", "value": 1097957.65 }
+          ]
+        },
+        {
+          "name": "Subtractions",
+          "children": [
+            { "name": "ADP", "value": 1036048.14 },
+            { "name": "Checks", "value": 1975226.16 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HSBC - T&B C GR - CHK - #6781",
+      "children": [
+        {
+          "name": "Additions",
+          "children": [
+            { "name": "Deposit Bridge", "value": 32818.96 },
+            { "name": "LOAN #6758", "value": 50000 }
+          ]
+        },
+        {
+          "name": "Subtractions",
+          "children": [
+            { "name": "FEE", "value": 420.47 },
+            { "name": "HSBC#6781-WF#9811", "value": 80000 }
+          ]
+        }
+      ]
+    }
+  ]
+}
