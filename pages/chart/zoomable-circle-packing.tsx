@@ -13,7 +13,7 @@ const ZoomableCirclePacking = () => {
   const handleFileInputChange = (
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
-    handleFileChange(event, setJsonData); // Call the imported handleFileChange function
+    handleFileChange(event, setJsonData);
   };
 
   return (
