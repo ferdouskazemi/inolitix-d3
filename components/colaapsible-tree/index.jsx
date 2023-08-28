@@ -6,7 +6,7 @@ function CollapsibleTreeChart({ data }) {
 
   useEffect(() => {
     // Specify the charts’ dimensions. The height is variable, depending on the layout.
-    const width = 928;
+    const width = 1200;
 
     const marginTop = 10;
     const marginRight = 10;
@@ -107,7 +107,14 @@ function CollapsibleTreeChart({ data }) {
         .attr('dy', '0.31em')
         .attr('x', (d) => (d._children ? -6 : 6))
         .attr('text-anchor', (d) => (d._children ? 'end' : 'start'))
-        .text((d) => d.data.name)
+        .attr('style', 'font-weight: bold;')
+        .text((d) => {
+          if (d.data.value !== undefined) {
+            return `${d.data.name} (${d.data.value.toLocaleString()} $)`; // Display name and Amount
+          } else {
+            return d.data.name; // Display only name
+          }
+        })
         .clone(true)
         .lower()
         .attr('stroke-linejoin', 'round')
